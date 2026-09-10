@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyFit — atadeɛ</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav" id="nav"></nav>
+<main class="container" style="max-width:640px;">
+  <div class="section-title">
+    <h2><span class="icon" id="myfit-heading-icon"></span>MyFit profiles</h2>
+  </div>
+  <p class="muted" style="margin-top:-10px;">Save your measurements once, reuse them for every order — for yourself or someone you're ordering for.</p>
+
+  <div id="profile-list" style="margin:20px 0;"></div>
+
+  <button class="btn btn-gold" id="add-profile-btn" type="button">+ Add a profile</button>
+
+  <div id="form-wrap" style="display:none; margin-top:20px;">
+    <div class="card" style="padding:22px;">
+      <h3 id="form-title" style="font-size:1.05rem;">New profile</h3>
+      <div class="measure-field"><label>Who is this for?</label><input id="mf-name" placeholder="e.g. Me, Mum, Kwame"></div>
+      <div class="myfit-form-grid" id="mf-fields"></div>
+      <div style="display:flex; gap:10px; margin-top:16px;">
+        <button class="btn btn-primary" id="mf-save" type="button">Save profile</button>
+        <button class="btn btn-outline" id="mf-cancel" type="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer id="footer" class="site-footer"></footer>
+<script src="/js/icons.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/myfit.js"></script>
+<script src="/js/pages/myfit-page.js"></script>
+</body>
+</html>

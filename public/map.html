@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Near me — atadeɛ</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav" id="nav"></nav>
+<main class="container">
+  <div class="hero" style="max-width:560px;">
+    <h1 class="display" style="font-size:1.9rem;">Designers near you</h1>
+    <p class="muted">Browse tailors and designers on the map, or filter by category and availability.</p>
+  </div>
+
+  <div class="map-filter-row">
+    <select id="f-category"><option value="">All categories</option></select>
+    <select id="f-availability">
+      <option value="">Any availability</option>
+      <option value="accepting">Accepting orders</option>
+      <option value="limited">Limited availability</option>
+    </select>
+    <button class="btn btn-outline" id="locate-btn" type="button">Use my location</button>
+    <select id="f-radius" style="display:none;">
+      <option value="5">Within 5 km</option>
+      <option value="10">Within 10 km</option>
+      <option value="20">Within 20 km</option>
+      <option value="50">Within 50 km</option>
+    </select>
+  </div>
+
+  <div id="map-canvas"></div>
+  <p class="muted" id="map-note" style="font-size:.8rem; margin-top:10px;"></p>
+</main>
+<footer id="footer" class="site-footer"></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/js/icons.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/pages/map.js"></script>
+</body>
+</html>

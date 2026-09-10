@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>atadeɛ — Find the right designer</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav" id="nav"></nav>
+<main class="container">
+  <div class="hero">
+    <h1 class="display">What would you like to make?</h1>
+    <p class="muted">Browse tailors, seamstresses and fashion designers near you.</p>
+    <div class="search-hero">
+      <span class="icon" id="hero-icon"></span>
+      <input id="f-q" type="text" placeholder="Search styles, designers or specialties…">
+      <button class="btn btn-gold" id="hero-search-btn">Search</button>
+    </div>
+    <div style="display:flex; gap:10px; justify-content:center; margin-top:14px; flex-wrap:wrap;">
+      <a href="/find-designer.html" class="btn btn-outline" style="padding:9px 18px; font-size:.85rem;">Have a photo, or not sure who to pick? Find a Designer</a>
+    </div>
+  </div>
+
+  <div class="category-row" id="category-row"></div>
+
+  <div class="filters" id="more-filters" style="display:none;">
+    <select id="f-category"><option value="">All categories</option></select>
+    <input id="f-location" type="text" placeholder="Location (e.g. Accra)" style="flex:1; min-width:140px;">
+    <select id="f-price">
+      <option value="">Any price</option>
+      <option value="0-300">GH₵0 – 300</option>
+      <option value="300-800">GH₵300 – 800</option>
+      <option value="800-2000">GH₵800 – 2000</option>
+      <option value="2000-99999">GH₵2000+</option>
+    </select>
+    <select id="f-rating">
+      <option value="">Any rating</option>
+      <option value="4.5">4.5★ and up</option>
+      <option value="4">4★ and up</option>
+    </select>
+    <label style="display:flex; align-items:center; gap:6px; font-size:.86rem; padding:10px 13px; border-radius:999px; border:1px solid var(--line); background:var(--ivory); cursor:pointer;">
+      <input type="checkbox" id="f-sustainable" style="accent-color:var(--forest); width:15px; height:15px;">
+      <span class="icon" style="width:15px;height:15px;color:var(--forest);" id="sustain-filter-icon"></span>Sustainable only
+    </label>
+    <button class="btn btn-outline" id="clear-filters" type="button">Clear</button>
+  </div>
+
+  <div class="section-title">
+    <h2 id="explore-heading">Explore designers</h2>
+    <button class="btn btn-outline" id="toggle-filters" type="button" style="padding:8px 16px; font-size:.8rem;">Filters</button>
+  </div>
+  <div class="grid" id="results"></div>
+</main>
+<footer id="footer" class="site-footer"></footer>
+
+<script src="/js/icons.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/pages/index.js"></script>
+</body>
+</html>
